@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+body {
+
+    background-color: #C1EBD6;
+    height: 300vh;
+}
+
+#HelloRhaniel {
+    margin-top: 20px;
+    display: grid;
+    height: 200px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    height: 15%;
+    max-width: 50%;
+    grid-template-areas: "text1 photo"
+        "text2 photo";
+}
+
+#text1 {
+    display: grid;
+    grid-area: text1;
+    font-family: "Pixelify Sans", sans-serif;
+    background: linear-gradient(to right, #50BEAE 30%, #E2CA12 60%);
+    background-clip: text;
+    color: transparent;
+    align-items: end;
+    justify-content: start;
+    font-size: 30px;
+}
+
+#hello {
+    line-height: 5rem;
+}
+
+#text2 {
+    grid-area: text2;
+    display: grid;
+    color: white;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 100px;
+    justify-content: start;
+    font-size: 20px;
+    color: black;
+
+}
+
+#photo {
+    grid-area: photo;
+    display: grid;
+
+}
+
+.RhanielPhoto {
+    width: 80%;
+    margin-top: 10px;
+
+}
+
+.name {
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-image: linear-gradient(to right, #50BEAE 30%, #E2CA12 60%);
+    width: 40%;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Home_Contato a {
+    font-size: 200%;
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+section {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.skillsText {
+    display: flex;
+    color: #CFDB2E;
+    font-size: 5em;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+#Skills {
+    height: 100vh;
+    background-color: #143E29;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#SkillBar {
+    height: 60vh;
+    width: 50%;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #8DCFAE;
+    margin-bottom: 5%s;
+
+}
+
+#SkillBar h2 {
+    margin-top: 3%;
+    margin-left: 3%;
+    text-transform: uppercase;
+}
+
+.barra {
+    display: flex;
+    background-color: #ffffff;
+    height: 2%;
+    width: 90%;
+    margin: 2% 0 5% 2%;
+    border-radius: 10px;
+
+
+}
+
+#Barra1 {
+    height: 100%;
+    background-color: #143E29;
+    width: 60%;
+    animation: Progress 2s linear;
+    border-radius: 10px;
+}
+
+#Barra2 {
+    height: 100%;
+    background-color: #143E29;
+    width: 55%;
+    animation: Progress 2s linear;
+    border-radius: 10px;
+}
+
+#Barra3 {
+    height: 100%;
+    background-color: #143E29;
+    width: 30%;
+    animation: Progress 2s linear;
+    border-radius: 10px;
+}
+
+#Barra4 {
+    height: 100%;
+    background-color: #143E29;
+    width: 50%;
+    animation: Progress 2s linear;
+    border-radius: 10px;
+}
+
+#Barra5 {
+    height: 100%;
+    background-color: #143E29;
+    width: 60%;
+    animation: Progress 2s linear;
+    border-radius: 10px;
+}
+
+@keyframes Progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {}
+
+}
+
+.MeusProjetos {
+    height: 130vh;
+    background-color: #143E29;
+    margin: 0;
+}
+
+#ProjetoText {
+    height: 2%;
+    text-transform: uppercase;
+    color: #CFDB2E;
+    font-size: 5em;
+    margin-top: 5%;
+    margin: 0 auto;
+
+}
+
+#GridProjetos{
+display: grid;
+}
+
+#project1 {
+    background-color: green;
+    height: 200px;
+    width: 20%;
+    
+}
+
+#project2 {
+    background-color: blue;
+    height: 200px;
+}
+
+#project3 {
+    background-color: red;
+    height: 200px;
+}
