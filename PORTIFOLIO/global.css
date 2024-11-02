@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+
+
+}
+
+
+body {
+
+    cursor: default;
+    background-color: #C1EBD6;
+    height: 290vh;
+
+}
+
+#HelloRhaniel {
+    margin-top: 20px;
+    display: grid;
+    height: 200px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    height: 15%;
+    max-width: 50%;
+    grid-template-areas: "text1 photo"
+        "text2 photo";
+}
+
+#text1 {
+    display: grid;
+    grid-area: text1;
+    font-family: "Pixelify Sans", sans-serif;
+    background: linear-gradient(to right, #50BEAE 30%, #E2CA12 60%);
+    background-clip: text;
+    color: transparent;
+    align-items: end;
+    justify-content: start;
+    font-size: 30px;
+}
+
+#hello {
+    line-height: 5rem;
+}
+
+#text2 {
+    grid-area: text2;
+    display: grid;
+    color: white;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 100px;
+    justify-content: start;
+    font-size: 20px;
+    color: black;
+
+}
+
+
+#curriculo {
+    margin: 20px 0px 0px 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #143E29;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #1bc437;
+    cursor: pointer;
+}
+
+#curriculo:hover {
+    background-color: #2e8a5c;
+    font-weight: bold;
+    border: 4px solid #1bc437;
+    outline: none;
+}
+
+#photo {
+    grid-area: photo;
+    margin-top: 5%;
+}
+
+
+.name {
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-image: linear-gradient(to right, #50BEAE 30%, #E2CA12 60%);
+    width: 40%;
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+
+}
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body.dark{
+    background-color: #143E29;
+}
+
+#Skills.dark2{
+    background-color: #6bb691;
+}
+
+#SkillBar.dark{
+    background-color: #143E29;
+    color: white; 
+}
+
+#Barra1.dark {
+    height: 100%;
+    background-color: #2846DA;
+    width: 60%;
+
+    border-radius: 10px;
+}
+
+#Barra2.dark {
+    height: 100%;
+    background-color: #2846DA;
+    width: 55%;
+
+    border-radius: 10px;
+}
+
+#Barra3.dark {
+    height: 100%;
+    background-color: #2846DA;
+    width: 30%;
+
+    border-radius: 10px;
+}
+
+#Barra4.dark {
+    height: 100%;
+    background-color: #2846DA;
+    width: 50%;
+
+    border-radius: 10px;
+}
+
+#Barra5.dark {
+    height: 100%;
+    background-color: #2846DA;
+    width: 60%;
+
+    border-radius: 10px;
+}
+
+#skillsText.dark{
+    color: #7D8235;
+}
+
+#linkToTop.dark{
+    background-color: #6bb691;
+}
+
+#curriculo.dark{
+    background-color: #6bb691;
+    color: black;
+}
+
+#about.dark{
+    color: white;
+}
+
+#contato.dark{
+    color: white;
+}
+
+#GridProjetos.dark{
+    background-color: #6bb691;
+}
+
+#ProjetoText.dark{
+    background-color: #6bb691;
+    color: #7D8235;
+}
+
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 30px;
+    width: 60px;
+
+    transform: scale(1.2);
+}
+
+.label .ball{
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 25px;
+    width: 25px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(30px);
+}
+
+.Home_Contato a {
+    font-size: 200%;
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+#Skills {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#Skills {
+    height: 110vh;
+    background-color: #143E29;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#skillsText {
+    display: flex;
+    color: #CFDB2E;
+    font-size: 5em;
+    margin-top: 7%;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+#SkillBar {
+    height: 60vh;
+    width: 50%;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #8DCFAE;
+    margin-bottom: 5%s;
+
+}
+
+#SkillBar h2 {
+    margin-top: 3%;
+    margin-left: 3%;
+    text-transform: uppercase;
+}
+
+.barra {
+    display: flex;
+    background-color: #ffffff;
+    height: 2%;
+    width: 90%;
+    margin: 2% 0 5% 2%;
+    border-radius: 10px;
+
+
+}
+
+.animation {
+    animation: Progress 2s ease-in-out;
+
+}
+
+#Barra1 {
+    height: 100%;
+    background-color: #143E29;
+    width: 60%;
+
+    border-radius: 10px;
+}
+
+#Barra2 {
+    height: 100%;
+    background-color: #143E29;
+    width: 55%;
+
+    border-radius: 10px;
+}
+
+#Barra3 {
+    height: 100%;
+    background-color: #143E29;
+    width: 30%;
+
+    border-radius: 10px;
+}
+
+#Barra4 {
+    height: 100%;
+    background-color: #143E29;
+    width: 50%;
+
+    border-radius: 10px;
+}
+
+#Barra5 {
+    height: 100%;
+    background-color: #143E29;
+    width: 60%;
+
+    border-radius: 10px;
+}
+
+@keyframes Progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {}
+
+}
+
+.MeusProjetos {
+    height: 134vh;
+    background-color: #143E29;
+    margin: 0;
+    position: relative;
+}
+
+#ProjetoText {
+    text-align: center;
+    text-transform: uppercase;
+    color: #CFDB2E;
+    font-size: 5em;
+    margin: 0 auto;
+    padding-top: 7%;
+
+}
+
+
+#GridProjetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73%;
+    position: relative;
+}
+
+#project1 {
+    background-color: #D9D9D9;
+    opacity: 40%;
+    height: 45%;
+    width: 15%;
+    border-radius: 20px;
+    position: absolute;
+    left: 27%;
+
+
+}
+
+#project2 {
+    background-color: #D9D9D9;
+    text-align: center;
+    height: 65%;
+    width: 25%;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#project3 {
+    background-color: #D9D9D9;
+    opacity: 40%;
+    height: 45%;
+    width: 15%;
+    border-radius: 20px;
+    position: absolute;
+    right: 25%;
+}
+
+.footer {
+
+    height: 10vh;
+    text-transform: uppercase;
+    margin: 2%;
+}
+
+#ingles {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#contatos {
+    gap: 2%;
+    display: flex;
+    align-items: center;
+}
+
+
+#linkToTop {
+    display: flex;
+    justify-content: end;
+    height: 12vh;
+    align-items: start;
+}
+
+#botaoTop {
+    position: absolute;
+    background-color: #4A79A5;
+    border-radius: 100%;
+    margin-right: 1%;
+    border: none;
+}
+
+#botaoTop a svg {
+    padding-bottom: 3%;
+}
+
+
+
+
+@media (max-width: 850px) {
+
+    #photo {
+        display: none;
+    }
+
+    #line {
+        display: none;
+    }
+
+    .name {
+        width: 50%;
+    }
+
+    .Home_Contato a {
+        display: flex;
+        width: 100%;
+
+    }
+
+    #hello {
+        display: none;
+    }
+
+    #line2 {
+        display: none;
+    }
+
+    #text1 {
+        display: none;
+    }
+
+    #text2 {
+
+        font-size: 3rem;
+
+    }
+
+    #HelloRhaniel {
+        margin-top: 5%;
+        display: flex;
+        text-align: center;
+
+    }
+
+    #SkillBar {
+        width: 90%;
+    }
+
+    #project1{
+        height: 30%;
+        width: 50%;
+        background-color: #D9D9D9;
+        top: 8%;
+        opacity: 1;
+        left: 25%;
+    }
+
+    #project2{
+        height: 30%;
+        width: 50%;
+        background-color: #D9D9D9;
+        top: 46%;
+        opacity: 1;
+        
+    }
+
+    #project3{
+        height: 30%;
+        width: 50%;
+        background-color: #D9D9D9;
+        top: 84%;
+        opacity: 1;
+    }
+
+    #botaoTop {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        width: 100vw;
+
+    }
+
+    #curriculo {
+        margin-top: 20%;
+    }
+
+    #line2 {
+        display: none;
+    }
+
+    #contatos {
+        gap: 25px;
+    }
+
+ 
+    
+
+
+
+
+}
+
+@media (max-width: 480px){
+    
+    #HelloRhaniel{
+        display: flex;
+        justify-content: start;
+    }
+
+    #project1{
+        display: none;
+    }
+
+    #project2{
+        height: 45%;
+        width: 50%;
+        top: 60%;
+    }
+
+    #project3{
+        height: 45%;
+        width: 50%;
+        background-color: #D9D9D9;
+        top: 8%;
+        opacity: 1;
+    }
+
+    #contatos{
+        gap: 0px;
+    }
+
+
+}
+
+@media (max-width: 1080px) {
+    #botaoTop{
+        display: none;
+    }
+}
